@@ -1,6 +1,5 @@
 using System.Text;
 using BlogApp.Application.Services;
-using BlogApp.Domain.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;

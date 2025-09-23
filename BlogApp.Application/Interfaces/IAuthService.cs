@@ -1,6 +1,3 @@
-// BlogApp.Application/Interfaces/IAuthService.cs
-
-using Microsoft.AspNetCore.Identity.Data;
 
 public interface IAuthService
 {

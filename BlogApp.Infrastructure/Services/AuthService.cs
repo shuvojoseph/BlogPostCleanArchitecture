@@ -1,6 +1,5 @@
 // BlogApp.Application/Services/AuthService.cs
 using Microsoft.AspNetCore.Identity;
-using BlogApp.Domain.Interfaces;
 
 namespace BlogApp.Application.Services
 {
@@ -40,12 +39,12 @@ namespace BlogApp.Application.Services
         {
             throw new NotImplementedException();
         }
-
+/*
         public Task<(string Token, string RefreshToken, DateTime Expiration)> RefreshTokenAsync(string token, string refreshToken)
         {
             throw new NotImplementedException();
         }
-
+*/
         public Task<(string Token, string RefreshToken, DateTime Expiration)> RefreshTokenAsync(RefreshTokenRequest request)
         {
             throw new NotImplementedException();
@@ -55,29 +54,30 @@ namespace BlogApp.Application.Services
         {
             throw new NotImplementedException();
         }
+
         /*
-       public Task<(string Token, string RefreshToken, DateTime Expiration)> RegisterAsync(string email, string password, string firstName, string lastName)
-       {
-           throw new NotImplementedException();
-       }
+public Task<(string Token, string RefreshToken, DateTime Expiration)> RegisterAsync(string email, string password, string firstName, string lastName)
+{
+  throw new NotImplementedException();
+}
 
-       public Task<(string Token, string RefreshToken, DateTime Expiration)> RegisterAsync(Microsoft.AspNetCore.Identity.Data.RegisterRequest request)
-       {
-           throw new NotImplementedException();
-       }
+public Task<(string Token, string RefreshToken, DateTime Expiration)> RegisterAsync(Microsoft.AspNetCore.Identity.Data.RegisterRequest request)
+{
+  throw new NotImplementedException();
+}
 
-       private async Task<(string Token, string RefreshToken, DateTime Expiration)> GenerateAuthResult(User user)
-       {
-           var roles = await _userManager.GetRolesAsync(user);
-           var token = _jwtTokenGenerator.GenerateToken(user, roles);
-           var refreshToken = _jwtTokenGenerator.GenerateRefreshToken();
+private async Task<(string Token, string RefreshToken, DateTime Expiration)> GenerateAuthResult(User user)
+{
+  var roles = await _userManager.GetRolesAsync(user);
+  var token = _jwtTokenGenerator.GenerateToken(user, roles);
+  var refreshToken = _jwtTokenGenerator.GenerateRefreshToken();
 
-           user.RefreshToken = refreshToken;
-           user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
-           await _userManager.UpdateAsync(user);
+  user.RefreshToken = refreshToken;
+  user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+  await _userManager.UpdateAsync(user);
 
-           return (token, refreshToken, DateTime.UtcNow.AddMinutes(60));
-       }
+  return (token, refreshToken, DateTime.UtcNow.AddMinutes(60));
+}
 */
     }
 }
