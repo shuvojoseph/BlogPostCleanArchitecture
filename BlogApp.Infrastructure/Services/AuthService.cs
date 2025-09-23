@@ -1,7 +1,7 @@
 // BlogApp.Infrastructure/Services/AuthService.cs
 using Microsoft.AspNetCore.Identity;
 
-namespace BlogApp.Application.Services
+namespace BlogApp.Infrastructure.Services
 {
     public class AuthService : IAuthService
     {
