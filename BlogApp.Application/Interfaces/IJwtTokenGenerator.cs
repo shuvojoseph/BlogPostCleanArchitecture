@@ -1,4 +1,4 @@
-// BlogApp.Domain/Interfaces/IJwtTokenGenerator.cs
+// BlogApp.Application/Interfaces/IJwtTokenGenerator.cs
 
     public interface IJwtTokenGenerator
     {

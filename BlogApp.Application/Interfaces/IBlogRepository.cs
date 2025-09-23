@@ -1,4 +1,4 @@
-// BlogApp.Domain/Interfaces/IBlogRepository.cs
+// BlogApp.Application/Interfaces/IBlogRepository.cs
 public interface IBlogRepository
 {
     Task<Blog?> GetByIdAsync(int id);
