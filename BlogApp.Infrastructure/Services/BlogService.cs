@@ -105,7 +105,7 @@ namespace BlogApp.Infrastructure.Services
                 b.Details,
                 b.LastUpdateTime,
                 b.ProjectOwners.Select(po =>
-                    new UserDto(po.UserId, po.User.UserName ?? "", po.User.Email ?? ""))
+                    new UserDto(po.UserId, $"{po.User.FirstName} {po.User.LastName}", po.User.Email ?? ""))
                     .ToList()
             ));
         }
@@ -121,7 +121,7 @@ namespace BlogApp.Infrastructure.Services
                 blog.Details,
                 blog.LastUpdateTime,
                 blog.ProjectOwners.Select(po =>
-                    new UserDto(po.UserId, po.User.UserName ?? "", po.User.Email ?? ""))
+                    new UserDto(po.UserId, $"{po.User.FirstName} {po.User.LastName}", po.User.Email ?? ""))
                     .ToList()
             );
         }
