@@ -35,7 +35,7 @@ BlogApp/
 ### 1️⃣ Clone and Build
 
 ```bash
-git clone https://github.com/yourusername/BlogPostCleanArchitecture.git
+git clone https://github.com/shuvojoseph/BlogPostCleanArchitecture.git
 cd BlogPostCleanArchitecture
 dotnet build
 ```
